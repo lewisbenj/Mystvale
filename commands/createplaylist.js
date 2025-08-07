@@ -73,21 +73,22 @@ async function createPlaylist(client, interaction, lang) {
 
 module.exports = {
     name: 'createplaylist',
-    description: 'Create a new playlist',
+    description: 'Tạo danh sách phát mới',
     permissions: '0x0000000000000800',
     options: [
         {
             name: 'name',
-            description: 'Enter playlist name',
+            description: 'Nhập tên danh sách phát',
             type: ApplicationCommandOptionType.String,
             required: true
         },
         {
             name: 'private',
-            description: 'Set playlist as private (visible only to you)',
+            description: 'Đặt danh sách phát ở chế độ riêng tư (chỉ bạn mới có thể xem))',
             type: ApplicationCommandOptionType.Boolean,
             required: true
         }
     ],
     run: createPlaylist
+
 };
