@@ -73,7 +73,8 @@ async function allPlaylists(client, interaction, lang) {
 
 module.exports = {
     name: 'allplaylists',
-    description: 'List all public playlists',
+    description: 'Liệt kê tất cả danh sách phát công khai',
     permissions: '0x0000000000000800',
     run: allPlaylists
+
 };
