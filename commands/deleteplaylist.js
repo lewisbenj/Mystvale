@@ -89,15 +89,16 @@ async function deletePlaylist(client, interaction, lang) {
 
 module.exports = {
     name: 'deleteplaylist',
-    description: 'Delete a playlist',
+    description: 'Xóa danh sách phát',
     permissions: '0x0000000000000800',
     options: [
         {
             name: 'name',
-            description: 'Enter playlist name',
+            description: 'Nhập tên danh sách phát',
             type: ApplicationCommandOptionType.String,
             required: true
         }
     ],
     run: deletePlaylist
+
 };
