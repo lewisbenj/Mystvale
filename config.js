@@ -2,8 +2,8 @@
 
 module.exports = {
   TOKEN: "",
-  language: "en",
-  ownerID: ["1004206704994566164", ""], 
+  language: "vi",
+  ownerID: ["812279245661274132", ""], 
   mongodbUri : "",
   spotifyClientId : "",
   spotifyClientSecret : "",
@@ -12,7 +12,7 @@ module.exports = {
   embedColor: "#1db954",
   activityName: "YouTube Music", 
   activityType: "LISTENING",  // Available activity types : LISTENING , PLAYING
-  SupportServer: "https://discord.gg/xQF9f9yUEM",
+  SupportServer: "https://discord.gg/Mystvale",
   embedTimeout: 5, 
   errorLog: "", 
   nodes: [
