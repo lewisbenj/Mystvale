@@ -55,7 +55,7 @@ async function allPlaylists(client, interaction, lang) {
             await interaction.reply({ embeds: [embed] });
         }
     } catch (error) {
-        console.error('Error fetching playlists:', error);
+        console.error('Lỗi khi tải danh sách phát:', error);
         const errorEmbed = new EmbedBuilder()
             .setColor('#ff0000')
             .setAuthor({ 
@@ -78,3 +78,4 @@ module.exports = {
     run: allPlaylists
 
 };
+
