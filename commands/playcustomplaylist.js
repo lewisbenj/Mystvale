@@ -142,15 +142,16 @@ async function playCustomPlaylist(client, interaction, lang) {
 
 module.exports = {
     name: 'playcustomplaylist',
-    description: 'Play a custom playlist',
+    description: 'Phát danh sách phát tùy chỉnh',
     permissions: '0x0000000000000800',
     options: [
         {
             name: 'name',
-            description: 'Enter playlist name',
+            description: 'Nhập tên danh sách phát',
             type: ApplicationCommandOptionType.String,
             required: true
         }
     ],
     run: playCustomPlaylist
+
 };
