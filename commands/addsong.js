@@ -67,7 +67,7 @@ async function addSong(client, interaction, lang) {
 
         await interaction.reply({ embeds: [embed] });
     } catch (error) {
-        console.error('Error adding song:', error);
+        console.error('Đã có lỗi khi phát bài hát:', error);
         const errorEmbed = new EmbedBuilder()
             .setColor('#ff0000')
             .setAuthor({ 
@@ -104,3 +104,4 @@ module.exports = {
     run: addSong
 
 };
+
