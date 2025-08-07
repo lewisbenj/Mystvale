@@ -102,7 +102,7 @@ async function play(client, interaction, lang) {
                 }
             } catch (err) {
                 console.error('Error fetching Spotify data:', err);
-                await interaction.followUp({ content: "❌ Failed to fetch Spotify data." });
+                await interaction.followUp({ content: "❌ Không thể tải dữ liệu Spotify." });
                 return;
             }
         } else {
@@ -110,7 +110,7 @@ async function play(client, interaction, lang) {
             const resolve = await client.riffy.resolve({ query, requester: interaction.user.username });
 
             if (!resolve || typeof resolve !== 'object' || !Array.isArray(resolve.tracks)) {
-                throw new TypeError('Invalid response from Riffy');
+                throw new TypeError('Phản hồi không hợp lệ từ Riffy');
             }
 
             if (resolve.loadType === 'playlist') {
@@ -182,14 +182,15 @@ async function play(client, interaction, lang) {
 
 module.exports = {
     name: "play",
-    description: "Play a song from a name or link",
+    description: "Phát một bài hát từ tên hoặc liên kết",
     permissions: "0x0000000000000800",
     options: [{
         name: 'name',
-        description: 'Enter song name / link or playlist',
+        description: 'Nhập tên bài hát / liên kết hoặc danh sách phát',
         type: ApplicationCommandOptionType.String,
         required: true
     }],
     run: play,
     requesters: requesters,
 };
+
