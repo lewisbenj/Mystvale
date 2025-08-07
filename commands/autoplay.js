@@ -45,7 +45,7 @@ async function toggleAutoplay(client, interaction, lang) {
 
 module.exports = {
     name: 'autoplay',
-    description: 'Toggle autoplay for the server',
+    description: 'Bật/tắt chế độ tự động phát cho máy chủ',
     permissions: '0x0000000000000800',
     options: [
         {
@@ -56,4 +56,5 @@ module.exports = {
         }
     ],
     run: toggleAutoplay
+
 };
