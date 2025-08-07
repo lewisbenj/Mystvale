@@ -85,21 +85,22 @@ async function addSong(client, interaction, lang) {
 
 module.exports = {
     name: 'addsong',
-    description: 'Add a song to a playlist',
+    description: 'Thêm bài hát vào danh sách phát',
     permissions: '0x0000000000000800',
     options: [
         {
             name: 'playlist',
-            description: 'Enter playlist name',
+            description: 'Nhập tên danh sách phát',
             type: ApplicationCommandOptionType.String,
             required: true
         },
         {
             name: 'input',
-            description: 'Enter song name or URL',
+            description: 'Nhập tên bài hát hoặc URL',
             type: ApplicationCommandOptionType.String,
             required: true
         }
     ],
     run: addSong
+
 };
