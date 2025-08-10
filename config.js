@@ -10,17 +10,17 @@ module.exports = {
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#1db954",
-  activityName: "YouTube Music", 
+  activityName: "Mystvale", 
   activityType: "LISTENING",  // Available activity types : LISTENING , PLAYING
   SupportServer: "https://discord.gg/mystvale",
   embedTimeout: 5, 
   errorLog: "", 
   nodes: [
      {
-      name: "GlaceYT",
-      password: "glaceyt",
-      host: "5.39.63.207",
-      port:  8262,
+      name: "Mystvale",
+      password: "youshallnotpass",
+      host: "15.235.181.136",
+      port:  21679,
       secure: false
     }
   ]
