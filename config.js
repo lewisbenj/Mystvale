@@ -18,10 +18,10 @@ module.exports = {
   nodes: [
      {
       name: "Mystvale",
-      password: "youshallnotpass",
-      host: "15.235.181.136",
-      port:  21679,
-      secure: false
+      password: "https://dsc.gg/ajidevserver",
+      host: "lava-v4.ajieblogs.eu.org",
+      port:   443,
+      secure: true
     }
   ]
 }
